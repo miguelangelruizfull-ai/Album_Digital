@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Album Digital | Conserva hoy los recuerdos que mañana contarán tu historia</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Inter',sans-serif;
+background:#0d1117;
+color:#fff;
+line-height:1.7;
+
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+header{
+
+min-height:100vh;
+
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+
+padding:40px;
+
+background:
+
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url("https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+background-position:center;
+
+}
+
+.hero{
+
+max-width:900px;
+
+}
+
+.hero h1{
+
+font-size:clamp(3rem,7vw,5rem);
+
+font-weight:800;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:1.3rem;
+
+opacity:.9;
+
+margin-bottom:40px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:18px 40px;
+
+background:#00d084;
+
+border-radius:50px;
+
+font-weight:700;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-3px);
+
+background:#00b873;
+
+}
+
+section{
+
+padding:90px 8%;
+
+}
+
+.container{
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+h2{
+
+font-size:2.5rem;
+
+margin-bottom:30px;
+
+text-align:center;
+
+}
+
+p{
+
+margin-bottom:20px;
+
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+margin-top:40px;
+
+}
+
+.card{
+
+background:#161b22;
+
+padding:30px;
+
+border-radius:18px;
+
+transition:.3s;
+
+border:1px solid rgba(255,255,255,.05);
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+color:#00d084;
+
+}
+
+.timeline{
+
+border-left:4px solid #00d084;
+
+padding-left:30px;
+
+margin-top:40px;
+
+}
+
+.timeline div{
+
+margin-bottom:35px;
+
+}
+
+.timeline h3{
+
+color:#00d084;
+
+margin-bottom:8px;
+
+}
+
+footer{
+
+padding:70px 30px;
+
+text-align:center;
+
+background:#000;
+
+}
+
+blockquote{
+
+font-size:1.4rem;
+
+font-style:italic;
+
+max-width:900px;
+
+margin:auto;
+
+opacity:.9;
+
+}
+
+@media(max-width:768px){
+
+section{
+
+padding:70px 25px;
+
+}
+
+.hero p{
+
+font-size:1.1rem;
+
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="hero">
+
+<h1>Album Digital</h1>
+
+<p>
+
+Conserva hoy los recuerdos que mañana contarán tu historia.
+
+</p>
+
+<a href="#proyecto" class="btn">
+
+Conocer el proyecto
+
+</a>
+
+</div>
+
+</header>
+
+<section id="proyecto">
+
+<div class="container">
+
+<h2>¿Qué es Album Digital?</h2>
+
+<p>
+
+Album Digital es una plantilla web de código abierto diseñada para que cualquier persona pueda crear su propio álbum digital de fotografías y videos.
+
+</p>
+
+<p>
+
+Nació a partir de una experiencia personal: crear un espacio para conservar los recuerdos de un hijo y asegurar que esos momentos permanecieran disponibles con el paso del tiempo.
+
+Hoy evoluciona para que cualquier familia pueda construir su propia cápsula digital.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>¿Por qué existe?</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>📱 Teléfonos</h3>
+
+<p>
+
+Muchos recuerdos permanecen únicamente en un teléfono que algún día dejará de funcionar.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>💾 Memorias</h3>
+
+<p>
+
+Tarjetas SD, discos duros y memorias USB también pueden dañarse o perderse.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>❤️ Recuerdos</h3>
+
+<p>
+
+Las fotografías representan historias que merecen conservarse para las siguientes generaciones.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>Nuestra misión</h2>
+
+<p style="text-align:center;max-width:900px;margin:auto;">
+
+Ofrecer una herramienta sencilla, gratuita y personalizable para que cualquier persona pueda conservar y organizar sus recuerdos digitales durante muchos años.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>¿Qué puedes hacer?</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>📷 Crear álbumes</h3>
+
+<p>Organiza fotografías y videos.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🗓 Cronología</h3>
+
+<p>Visualiza tu historia ordenada por fechas.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🏷 Categorías</h3>
+
+<p>Clasifica tus recuerdos por temas.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🌎 Compartir</h3>
+
+<p>Comparte tu historia con familiares y amigos.</p>
+
+</div>
+
+<div class="card">
+
+<h3>💻 GitHub Pages</h3>
+
+<p>Publica gratuitamente tu álbum digital.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🎨 Personalización</h3>
+
+<p>Modifica completamente el contenido según tus necesidades.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>Casos de uso</h2>
+
+<div class="grid">
+
+<div class="card">
+
+Familias
+
+</div>
+
+<div class="card">
+
+Historia de un hijo
+
+</div>
+
+<div class="card">
+
+Viajes
+
+</div>
+
+<div class="card">
+
+Bodas
+
+</div>
+
+<div class="card">
+
+Graduaciones
+
+</div>
+
+<div class="card">
+
+Empresas familiares
+
+</div>
+
+<div class="card">
+
+Proyectos personales
+
+</div>
+
+<div class="card">
+
+Archivos históricos
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>Roadmap</h2>
+
+<div class="timeline">
+
+<div>
+
+<h3>Versión 1.0</h3>
+
+Galería web • Organización cronológica • Categorías • Responsive.
+
+</div>
+
+<div>
+
+<h3>Versión 2.0</h3>
+
+Línea del tiempo • Búsqueda • Favoritos.
+
+</div>
+
+<div>
+
+<h3>Versión 3.0</h3>
+
+Usuarios • Álbumes privados • Compartir recuerdos.
+
+</div>
+
+<div>
+
+<h3>Versión 4.0</h3>
+
+Aplicación móvil • Sincronización • Copias de seguridad.
+
+</div>
+
+<div>
+
+<h3>Versión 5.0</h3>
+
+Organización inteligente mediante IA.
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>Filosofía</h2>
+
+<blockquote>
+
+"Las fotografías son más que imágenes.
+
+Son historias.
+
+Son personas.
+
+Son momentos irrepetibles.
+
+La tecnología cambia constantemente, pero los recuerdos merecen permanecer."
+
+</blockquote>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>Album Digital</h2>
+
+<p>
+
+Proyecto de código abierto para preservar la memoria digital de las familias.
+
+</p>
+
+<br>
+
+<p>
+
+Desarrollado por <strong>Miguel Ángel Ruiz</strong>
+
+</p>
+
+<br>
+
+<p style="opacity:.7;">
+
+Los dispositivos pueden perderse.
+
+Los recuerdos no deberían hacerlo.
+
+</p>
+
+</footer>
+
+</body>
+</html>
