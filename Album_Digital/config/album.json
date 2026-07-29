@@ -1,0 +1,12 @@
+{
+"titulo":"Mi Historia Digital",
+"autor":"Nombre del usuario",
+"descripcion":"Mis recuerdos organizados para el futuro",
+"categorias":[
+"Familia",
+"Viajes",
+"Infancia",
+"Celebraciones"
+],
+"orden":"cronologico"
+}
