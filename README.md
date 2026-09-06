@@ -4,285 +4,144 @@
 
 ## ¿Qué es Album Digital?
 
-Album Digital es una plantilla web de código abierto diseñada para que cualquier persona pueda crear su propio álbum digital de fotografías y videos.
+**Album Digital** es una plantilla web de código abierto para organizar fotografías y videos mediante tecnologías web y GitHub Pages.
 
-Nació a partir de una experiencia personal: crear un espacio para conservar los recuerdos de un hijo y asegurar que esos momentos permanecieran disponibles con el paso del tiempo. Esa idea evolucionó hasta convertirse en una herramienta que cualquier familia puede utilizar para preservar su propia historia.
+El proyecto nació a partir de una implementación personal y evolucionó hacia una base reutilizable donde el código público puede mantenerse separado del contenido privado.
 
-A diferencia de una galería tradicional, **Album Digital** busca convertirse en una cápsula del tiempo digital donde cada fotografía representa un momento y cada álbum cuenta una historia.
-
----
-
-# ¿Por qué existe este proyecto?
-
-Cada año millones de personas pierden fotografías y videos porque:
-
-- Su teléfono dejó de funcionar.
-- Cambiaron de dispositivo.
-- Perdieron una memoria SD.
-- Formatearon una computadora.
-- Se dañó un disco duro.
-- Olvidaron el acceso a una cuenta.
-
-En muchos casos esos recuerdos nunca pueden recuperarse.
-
-Album Digital nace para ayudar a evitar que eso ocurra.
-
----
-
-# Nuestra misión
-
-Ofrecer una herramienta sencilla, gratuita y personalizable para que cualquier persona pueda conservar y organizar sus recuerdos digitales durante muchos años.
-
----
-
-# Nuestra visión
-
-Convertirnos en una plataforma donde las familias puedan construir una línea del tiempo de su vida y preservar su historia para las siguientes generaciones.
-
----
-
-# ¿Qué puedes hacer?
-
-Con Album Digital puedes:
-
-- Crear tu propio álbum digital.
-- Organizar fotografías cronológicamente.
-- Clasificar recuerdos por categorías.
-- Agregar videos.
-- Compartir tu historia con familiares y amigos.
-- Publicar gratuitamente mediante GitHub Pages.
-- Personalizar completamente el contenido.
-
----
-
-# Características
-
-- Organización cronológica.
-- Categorías personalizables.
-- Diseño adaptable (Responsive).
-- Funciona desde cualquier navegador.
-- Proyecto de código abierto.
-- Fácil de modificar.
-- Preparado para GitHub Pages.
-- Sin publicidad.
-- Sin dependencia de servicios propietarios.
-
----
-
-# Estructura del proyecto
+## Evolución del proyecto
 
 ```text
-Album_Digital/
-│
-├── index.html
-├── README.md
-│
-├── css/
-│   └── style.css
-│
-├── js/
-│   └── app.js
-│
-├── config/
-│   └── album.json
-│
-├── media/
-│   ├── fotos/
-│   └── videos/
-│
-├── manual/
-│   └── GUIA.md
-│
-└── assets/
+KATO250712/AlbumFamiliar
+original histórico
+        ↓
+primer prototipo funcional
+        ↓
+album_MiguelAngelRuiz
+migración / implementación personal
+        ↓
+Album_Digital
+producto canónico reutilizable
 ```
+
+La historia completa está documentada en:
+
+- [HISTORY.md](HISTORY.md) — procedencia y evolución verificable.
+- [docs/EVOLUCION.md](docs/EVOLUCION.md) — análisis técnico de la transición.
+- [Reconstrucción legacy sanitizada](https://miguelangelruizfull-ai.github.io/Album_Digital/legacy/) — demo funcional sin fotografías, videos ni datos familiares.
+
+### Regla de privacidad
+
+El repositorio histórico se utiliza únicamente como evidencia de origen. **Album Digital no copia ni carga su contenido personal.** La reconstrucción `legacy/` usa datos ficticios locales y no consulta el repositorio histórico.
 
 ---
 
-# Personalización
+## Problema que busca resolver
 
-El proyecto no incluye fotografías personales.
+Las fotografías y videos suelen quedar dispersos entre teléfonos, memorias, discos y plataformas. Album Digital explora una forma de organizar ese contenido mediante una aplicación web que pueda mantenerse, migrarse y adaptarse.
 
-Cada usuario puede personalizarlo agregando:
-
-- Sus fotografías.
-- Sus videos.
-- Sus recuerdos.
-- Su nombre.
-- Su descripción.
-- Sus categorías.
-- Su historia.
-
-Toda la información principal puede configurarse desde:
-
-```
-config/album.json
-```
-
-Ejemplo:
-
-```json
-{
-  "titulo": "Mi Historia Familiar",
-  "autor": "Familia López",
-  "descripcion": "Nuestros recuerdos a través del tiempo",
-  "categorias": [
-    "Familia",
-    "Infancia",
-    "Viajes",
-    "Celebraciones"
-  ]
-}
-```
+La evolución del proyecto también aborda otro problema: **separar la aplicación de los datos privados** para que una solución personal pueda convertirse en una base reutilizable.
 
 ---
 
-# Organización de fotografías
+## Características y objetivos
 
-Se recomienda organizar los archivos por años o permitir que el sistema los ordene automáticamente utilizando la fecha de creación o la información EXIF de las imágenes.
-
-Ejemplo:
-
-```text
-media/
-└── fotos/
-    ├── 2018/
-    ├── 2019/
-    ├── 2020/
-    ├── 2021/
-    └── 2026/
-```
+- Galería web responsive.
+- Organización de fotografías y videos.
+- Categorías configurables.
+- Publicación mediante GitHub Pages.
+- Separación progresiva entre interfaz, configuración y contenido.
+- Proyecto público sin fotografías personales incluidas.
+- Documentación de procedencia y evolución.
 
 ---
 
-# Categorías sugeridas
-
-- Familia
-- Hijos
-- Padres
-- Abuelos
-- Viajes
-- Cumpleaños
-- Escuela
-- Graduaciones
-- Navidad
-- Vacaciones
-- Mascotas
-- Eventos especiales
-
-Cada usuario puede crear sus propias categorías.
-
----
-
-# Casos de uso
-
-Album Digital puede utilizarse para:
-
-- Álbum familiar.
-- Historia de un hijo.
-- Recuerdos de pareja.
-- Viajes.
-- Eventos escolares.
-- Bodas.
-- Empresas familiares.
-- Evidencias fotográficas.
-- Proyectos personales.
-- Archivos históricos.
-
----
-
-# Tecnologías
+## Tecnologías
 
 - HTML5
 - CSS3
 - JavaScript
+- JSON
+- Git
+- GitHub
 - GitHub Pages
 
 ---
 
-# Roadmap
+## Arquitectura objetivo
 
-## Versión 1.0
+```text
+INTERFAZ
+HTML + CSS
 
-- Galería web.
-- Organización cronológica.
-- Categorías.
-- Diseño adaptable.
+COMPORTAMIENTO
+JavaScript
 
-## Versión 2.0
+CONFIGURACIÓN
+JSON / estructura configurable
 
-- Línea del tiempo.
-- Búsqueda.
-- Filtros.
-- Favoritos.
+CONTENIDO
+medios de cada implementación
 
-## Versión 3.0
+PUBLICACIÓN
+GitHub Pages
+```
 
-- Usuarios.
-- Álbumes privados.
-- Compartir álbumes.
-
-## Versión 4.0
-
-- Aplicación móvil.
-- Sincronización.
-- Copias de seguridad.
-
-## Versión 5.0
-
-- Organización inteligente mediante IA.
-- Reconocimiento de personas.
-- Reconocimiento de lugares.
-- Búsqueda por lenguaje natural.
+El objetivo es que una persona pueda reutilizar la base sin depender del contenido del proyecto que le dio origen.
 
 ---
 
-# Filosofía
+## Reconstrucción histórica sanitizada
 
-Las fotografías son más que imágenes.
+`legacy/index.html` conserva conceptos presentes en el primer prototipo:
 
-Son recuerdos.
+- galería en cuadrícula;
+- menú flotante de álbumes;
+- selección de carpetas;
+- render dinámico;
+- sección de videos;
+- visor tipo lightbox.
 
-Son historias.
+La diferencia es deliberada: todos los elementos visuales son ficticios y están generados localmente.
 
-Son personas.
+**Demo:**
 
-Son momentos irrepetibles.
-
-La tecnología cambia constantemente, pero los recuerdos merecen permanecer.
-
-Album Digital busca ayudar a conservar esas historias para que puedan seguir compartiéndose con las siguientes generaciones.
-
----
-
-# Contribuciones
-
-Las contribuciones son bienvenidas.
-
-Puedes colaborar con:
-
-- Corrección de errores.
-- Nuevas funciones.
-- Mejoras de diseño.
-- Optimización del rendimiento.
-- Documentación.
-- Traducciones.
+https://miguelangelruizfull-ai.github.io/Album_Digital/legacy/
 
 ---
 
-# Licencia
+## Roadmap
 
-Este proyecto se distribuye bajo la licencia definida en el archivo `LICENSE`.
+Las siguientes son líneas de evolución, no funcionalidades afirmadas como completas:
+
+- consolidar la estructura interna del repositorio;
+- configuración externa más clara;
+- carga de medios independiente del código;
+- búsqueda y filtros;
+- línea del tiempo;
+- accesibilidad y rendimiento;
+- manejo explícito de privacidad;
+- documentación de despliegue para terceros.
 
 ---
 
-# Autor
+## Historia y caso profesional
 
-**Miguel Ángel Ruiz**
+Este proyecto se utiliza como caso para documentar el proceso:
 
-Este proyecto nació de una necesidad personal: conservar la historia de un hijo. Hoy evoluciona como una herramienta para que cualquier persona pueda preservar su propia historia y compartir sus recuerdos con quienes más quiere.
+**necesidad real → prototipo → limitaciones → migración → separación de datos → producto reutilizable**.
+
+Portafolio profesional:
+
+https://miguelangelruizfull-ai.github.io/
+
+Perfil GitHub:
+
+https://github.com/miguelangelruizfull-ai
 
 ---
 
-## Un último mensaje
+## Autor
 
-> *Los dispositivos pueden perderse. Los recuerdos no deberían hacerlo.*
+**Miguel Ángel Ruiz Ramírez**
+
+Proyecto orientado a desarrollo web práctico, organización de información y evolución de soluciones reales hacia estructuras reutilizables.
